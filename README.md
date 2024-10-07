@@ -39,3 +39,7 @@ Frontend: HTML, CSS, Bootstrap, Chart.js
 Veritabanı: MSSQL Server
 
 Diğer: LINQ, jQuery, AJAX
+
+Ekranlar 
+
+![Uploading FireShot Capture 001 - Pigra - Personal Portfolio - localhost.png…]()

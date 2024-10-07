@@ -1,0 +1,47 @@
+﻿@model Proje1Portfolio.Models.Profile
+@{
+    ViewBag.Title = "update";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<h2 class="mb-4"> Profil Bilgilerini güncelle</h2>
+
+<form method="post">
+
+    @Html.HiddenFor(x => x.Profileid, new { @class = "form-control" })
+    <br />
+
+    <label>Başlık</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <br />
+
+    <label>Açıklama</label>
+    @Html.TextAreaFor(x => x.Description, 6, 0, new { @class = "form-control" })
+    <br />
+
+    <label>Adres</label>
+    @Html.TextBoxFor(x => x.Address, new { @class = "form-control" })
+    <br />
+
+    <label>Email Adresi</label>
+    @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+    <br />
+    <label>Telelfon numarası</label>
+    @Html.TextBoxFor(x => x.PhoneNumber, new { @class = "form-control" })
+    <br />
+    <label>Github adresi</label>
+    @Html.TextBoxFor(x => x.Github, new { @class = "form-control" })
+    <br />
+    <label>Fotoğraf</label>
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+    <br />
+    <label>Konum</label>
+    @Html.TextBoxFor(x => x.MapLocation, new { @class = "form-control" })
+    <br />
+
+
+
+    <button class="btn btn-info">Güncelle</button>
+
+
+</form>

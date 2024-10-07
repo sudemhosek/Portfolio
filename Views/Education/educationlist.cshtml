@@ -1,0 +1,36 @@
+﻿@model List<Proje1Portfolio.Models.Education>
+@{
+    ViewBag.Title = "educationlist";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<h2 class="mb-4">Eğitimlerim</h2>
+
+<table class="table table-bordered">
+
+    <tr>
+        <th>Id</th>
+        <th>Eğitim Adı</th>
+        <th>Eğitim Trihi</th>
+        <th>Eğitimin Konusu</th>
+        <th> Eğitimin Açıklaması</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Educationid</td>
+            <td>@item.Title</td>
+            <td>@item.EducationDate</td>
+            <td>@item.Subbitle</td>
+            <td>@item.Description</td>
+            <td><a href="/Education/Delate/@item.Educationid" class="btn btn-danger">sil</a></td>
+            <td><a href="/Education/update/@item.Educationid" class="btn btn-success">Güncelle</a></td>
+
+        </tr>
+    }
+</table>
+<td><a href="/Education/createEducation/" class="btn btn-success">Yeni Eğitim Bilgisi Ekle</a></td>
+

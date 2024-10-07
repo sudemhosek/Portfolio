@@ -1,0 +1,72 @@
+﻿@model List<Proje1Portfolio.Models.messagetbl>
+@{
+    ViewBag.Title = "Inbox";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<h2 class="mb-4">Gelen Mesajlar</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Gönderen</th>
+        <th>Konu</th>
+        <th>Tarih</th>
+        <th>Kategori</th>
+        <th>Durum</th>
+         <th>Sil</th>
+        <th>Mesajı Görüntüle</th>
+    </tr>
+
+    @foreach(var item in Model)
+    {
+            var backgroundColor = "";
+
+            switch (item.Category.CategoryName.ToLower())
+            {
+                case "teşekkür":
+                    backgroundColor = "#d4edda"; // Yeşil
+                    break;
+                case "proje talebi":
+                    backgroundColor = "#cce5ff"; // Mavi
+                    break;
+                case "şikayet":
+                    backgroundColor = "#f8d7da"; // Kırmızı
+                    break;
+                case "kutlama":
+                    backgroundColor = "#fff3cd"; // Sarı
+                    break;
+                case "soru-cevap":
+                    backgroundColor = "#e2e3e5"; // Gri
+                    break;
+                case "geri bildirim":
+                    backgroundColor = "#cce5ff"; // Açık mavi
+                    break;
+                case "duyuru":
+                    backgroundColor = "#f0e68c"; // Açık sarı
+                    break;
+                default:
+                    backgroundColor = "#ffffff"; // Varsayılan beyaz
+                    break;
+            
+        }
+                <tr >
+                    <td>@item.Messageid</td>
+                    <td>@item.name</td>
+                    <td>@item.subject</td>
+                    <td>@item.senddate</td>
+                    <td style="background-color:@backgroundColor">@item.Category.CategoryName</td>
+                    @if (item.isread == false)
+                    {
+                        <td><a href="/message/MessageStatuChangeToTrue/@item.Messageid" class="btn btn-info">okundu olarak işaretle</a></td>
+                    }
+                    else
+                    {
+                        <td><a href="/message/MessageStatuChangeToFalse/@item.Messageid" class="btn btn-warning">okunmadı olarak işaretle</a></td>
+                    }
+
+                    <td><a href="/message/delate/@item.Messageid" class="btn btn-danger">Sil</a></td>
+                    <td><a href="/message/Messagedetail/@item.Messageid" class="btn btn-secondary">Mesajı görüntüle</a></td>
+                </tr>
+            }
+</table>
+

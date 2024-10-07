@@ -1,0 +1,64 @@
+﻿@model List<Proje1Portfolio.Models.Profile>
+@{
+    ViewBag.Title = "list";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<h2 class="mb-4">Profil Bilgilerim</h2>
+
+<style>
+   
+    table {
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    td, th {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        max-width: 100px; 
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+    }
+
+    
+    .table-container {
+        max-height: 400px; 
+        overflow-y: auto; 
+    }
+</style>
+
+<table class="table table-bordered">
+
+    <tr>
+        <th>#</th> 
+        <th>Başlık</th>
+        <th>Açıklama</th>
+        <th>Adres</th>
+        <th>Email Adresi</th>
+        <th>Github Adresi</th>
+        <th>Fotoğraf</th>
+        <th>Konum</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Profileid</td>
+            <td>@item.Title</td>
+            <td>@item.Description</td>
+            <td>@item.Address</td>
+            <td>@item.Email</td>
+            <td>@item.Github</td>
+            <td>@item.ImageUrl</td>
+            <td>@item.MapLocation</td>
+            <td><a href="/profile/Delate/@item.Profileid" class="btn btn-danger">sil</a></td>
+            <td><a href="/profile/update/@item.Profileid" class="btn btn-success">Güncelle</a></td>
+
+        </tr>
+    }
+</table>
+

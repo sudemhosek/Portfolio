@@ -1,0 +1,34 @@
+﻿@model Proje1Portfolio.Models.Testimonial
+@{
+    ViewBag.Title = "update";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<h2 class="mb-4">  Hizmet Güncelle</h2>
+
+<form method="post">
+
+    @Html.HiddenFor(x => x.Testimonianiaid, new { @class = "form-control" })
+    <br />
+
+    <label>İsim-Soyad</label>
+    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+    <br />
+
+    <label>Resim</label>
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+    <br />
+
+    <label>Başlık</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <br />
+
+    <label>Yorum</label>
+    @Html.TextAreaFor(x => x.Comment, 6, 0, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-info">Güncelle</button>
+
+
+</form>
+

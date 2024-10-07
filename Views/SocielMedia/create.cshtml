@@ -1,0 +1,29 @@
+﻿@model Proje1Portfolio.Models.SocialMedia
+@{
+    ViewBag.Title = "create";
+    Layout = "~/Views/Admin/Index.cshtml";
+}
+
+<h2 class="mb-4"> Yeni deneyim girişi</h2>
+
+<form method="post">
+
+    <label>Sosyel Medyanın Adı</label>
+    @Html.TextBoxFor(x => x.title, new { @class = "form-control" })
+    <br />
+
+    <label>İCONU</label>
+    @Html.TextBoxFor(x => x.ICON, new { @class = "form-control" })
+    <br />
+
+    <label>URL</label>
+    @Html.TextBoxFor(x => x.Url, new { @class = "form-control" })
+    <br />
+
+    @Html.HiddenFor(x => x.STATUS, new { Value = true })
+
+    <button class="btn btn-info">Oluştur</button>
+
+
+</form>
+

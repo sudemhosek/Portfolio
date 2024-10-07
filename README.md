@@ -42,4 +42,5 @@ Diğer: LINQ, jQuery, AJAX
 
 Ekranlar 
 
-![Uploading FireShot Capture 001 - Pigra - Personal Portfolio - localhost.png…]()
+![FireShot Capture 001 - Pigra - Personal Portfolio - localhost](https://github.com/user-attachments/assets/3a2ead5b-d69e-478f-94a8-c9a61bd96f6a)
+

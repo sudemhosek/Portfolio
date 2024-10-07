@@ -46,7 +46,7 @@ Ekranlar
 
 Admin Ekranı
 
-![FireShot Capture 001 - Pigra - Personal Portfolio - localhost](https://github.com/user-attachments/assets/3a2ead5b-d69e-478f-94a8-c9a61bd96f6a)
+
 ![Ekran Görüntüsü (37)](https://github.com/user-attachments/assets/475bb58b-1c68-4339-902c-6932eb93b873)
 ![Ekran Görüntüsü (38)](https://github.com/user-attachments/assets/c784a80e-c001-49ea-a327-e28cbea03efb)
 ![Ekran Görüntüsü (39)](https://github.com/user-attachments/assets/58c41013-6ea0-4360-969b-991c49a9b6ab)

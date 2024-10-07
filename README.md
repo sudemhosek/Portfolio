@@ -40,6 +40,10 @@ Veritabanı: MSSQL Server
 
 Diğer: LINQ, jQuery, AJAX
 
+Veritabanı Diyagramı
+
+![Ekran Görüntüsü (50)](https://github.com/user-attachments/assets/dd6cd73e-2933-488a-856e-02af890e8e29)
+
 Ekranlar 
 
 ![FireShot Capture 001 - Pigra - Personal Portfolio - localhost](https://github.com/user-attachments/assets/3a2ead5b-d69e-478f-94a8-c9a61bd96f6a)

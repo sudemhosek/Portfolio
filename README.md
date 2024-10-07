@@ -46,13 +46,12 @@ Ekranlar
 
 Admin Ekranı
 
-
-![Ekran Görüntüsü (37)](https://github.com/user-attachments/assets/475bb58b-1c68-4339-902c-6932eb93b873)
-![Ekran Görüntüsü (38)](https://github.com/user-attachments/assets/c784a80e-c001-49ea-a327-e28cbea03efb)
-![Ekran Görüntüsü (39)](https://github.com/user-attachments/assets/58c41013-6ea0-4360-969b-991c49a9b6ab)
-![Ekran Görüntüsü (41)](https://github.com/user-attachments/assets/18d6e8cb-3534-42b8-ba20-db8ecfa07b6b)
-![Ekran Görüntüsü (42)](https://github.com/user-attachments/assets/6be6b0a8-c22f-4e99-8160-429441201418)
-![Ekran Görüntüsü (43)](https://github.com/user-attachments/assets/c3190218-6a21-4a0f-8d55-c1b827cce8a2)
-![Ekran Görüntüsü (40)](https://github.com/user-attachments/assets/4dbae4e5-0874-4ddf-9b2d-1c50264556f2)
+![Ekran Görüntüsü (37)](https://github.com/user-attachments/assets/40b8ae5d-a613-49da-9b33-563044d4e2e3)
+![Ekran Görüntüsü (38)](https://github.com/user-attachments/assets/afc685e4-2cf2-4730-ac84-53e0c482d863)
+![Ekran Görüntüsü (39)](https://github.com/user-attachments/assets/2662a31f-4ae9-44a6-8ac7-9555dc726c1c)
+![Ekran Görüntüsü (41)](https://github.com/user-attachments/assets/752f8617-8dfb-4bbd-ad71-27df3799163c)
+![Ekran Görüntüsü (42)](https://github.com/user-attachments/assets/4f5b6a1e-0cb6-4bda-9c69-1caeacd825e2)
+![Ekran Görüntüsü (43)](https://github.com/user-attachments/assets/9e4b84d7-b280-46d7-b18e-84f459be78fe)
+![Ekran Görüntüsü (40)](https://github.com/user-attachments/assets/e8761f89-d89d-42de-a0ed-2958b3eb93bd)
 
 
